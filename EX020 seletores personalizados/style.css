@@ -1,0 +1,49 @@
+@charset "UTF 8";
+
+body{
+    background-color: rgb(142, 236, 142);
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: left;
+    color: rgb(2, 43, 2);
+
+}
+h1#principal{
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(246, 248, 246);
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: left;
+    color: rgb(3, 92, 3);
+}
+.topico{
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: justify;
+    color: rgb(1, 19, 1);
+}
+p#principal{
+    background-color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+    color: rgb(2, 43, 2);
+    box-shadow: 5px 5px 15px indigo;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .especial:hover{
+            color: white;
+            background-color: darkred;
+            
+        }
+        .especial::after{
+            content: '>>';
+            font-weight:lighter;
+
+        }
+        .especial::before{
+            content: '<<';
+            font-weight: lighter;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: saddlebrown;
+            text-decoration: underline;
+        }
+        img{
+            box-shadow: 5px 5px 15px blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ol>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="blank"> Aula sobre links personalizados</a></li>
+        <li><a class="especial" href="https://www.google.com.br/" target="blank">Google</a></li>
+        <li><a href="https://pixabay.com/pt/" target="blank">Pixabay</a></li>
+    </ol>
+    <p>Para conseguir o efeito acima utilize o código abaixo:</p>
+    <img src="person links01.png" alt="personalizando links.png">
+    <br>
+    <p>Estes elementos dão mais poder às css, por isso precisamos aprender a utilizá-los. Quando utlizamos id(#) e class(.) precisamos saber fazer as correspondências entre um e outro no corpo da página em HTML e dentro da folha de estilo css. Para isso utilizamos as regras abaixo: </p>
+    <img src="simbolos de seletores01.png" alt="símbolos de seletores.png">
+    <br>
+    <p>Note que o link agora é uma <strong>class</strong> e ao fazer isso nós podemos dar uma formatação diferenciada a este link e a todos os que tiverem a denominação "especial" como no exemplo.</p>
+    <img src="class1.png" alt="exemplo de calss html.png"> <br>
+<p>Dentro da folha de estilo css colocamos o item denominado como "especial" precedido de ponto e dois pontos ao final da palavra. Assim o navegador entende que se refere a uma formatação especial do seletor "especial". Como na imagem abaixo: </p>
+<img src="pseudoelementos2.png" alt="pesudoelementos html.png">
+    
+    
+</body>
+</html>

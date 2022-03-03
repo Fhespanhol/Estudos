@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando degradê</title>
+    <style>
+        *{min-height: 100%;}
+       
+        body{
+            
+            background-image:linear-gradient(to right,rgb(0, 255, 76),rgb(130, 243, 96)
+            , rgb(195, 236, 12)); background-attachment: fixed;
+           
+        }
+    </style>
+</head>
+<body>
+   <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;" >
+    <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Aplicando degradê a uma página</h1>
+   <p style="font-size: 18px;"> Para aplicar degradê em um site para que fique com o fundo igual desta página é preciso configurar utilizando as seguintes tags css: <br> <br></p>
+    <img src="apligradiente01.png" alt="gradiente em css01.png"> 
+
+</p> 
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 18px;">
+        <strong style="font-size: 24px;">Dica importante</strong><br>
+        Para que o conteúdo da página fique aparecendo de forma correta, ou seja, sem que cada texto ou imagem seja lançado dentro de cada espaço após 100% é preciso usar a tag <img src="minheight01.png" alt="min height.png">
+
+    <br> 
+    <br>
+    A configuração para aplicar um gradiente de cores em um site então fica assim: <br>
+    <img src="configdegrade01.png" alt="gradiente de cores em css.png"> 
+    </p>
+    <h3>Dicas para criar um gradiente de cores</h3>
+    <p>
+        <ul style="font-size: 18px;">
+            <li>Usar de 3 a 5 cores, mais que isso fica confuso;</li>
+            <li>Sempre usar um degradê que respeite a paleta de cores utilizada;</li>
+            <li>a tag min height é necessária, senão o espaço entre parágrafos, imagens e outros elementos da página fica muito grande.</li>
+        </ul>
+    </p>
+    <h3>Exemplo de site harmônico</h3>
+    <p>Para criar um site equilibrado tanto em cores como em estilo utilize uma folha de estilo css como a da imagem:</p>
+    <img src="folhadeestilocss.png" alt="folha de estilo css.png">
+    <h3>O resultado da aplicação desta folha de estilo fica assim</h3>
+    <img src="exemplodesite1.png" alt="site em css.png"> 
+    <p>Para acessar a página cores03.html que é aonde apliquei esse estilo é só <a href="cores03.html", target="blank">clicar aqui!</a></p>
+   <h3>Tamanhos de fontes</h3>
+   <p>
+       Quando escrevemos um texto para uma página web, se não indicarmos nenhum tamanho em específico os navegadores tem por padrão apresentar o texto em 16px. 
+   </p>
+   <p>Quando queremos usar um tamanho diferente o ideal é seguir o que recomenda o W3C. Como temos uma grande variedade de estilos e tamanhos de telas o ideal é adotar uma medida padrão. Os padrões mais utlilizados são o pixel(px) e a porcentagem (em). </p>
+   <h3>Peso e redimensionamento de fontes</h3>
+   <p>Para trabalhar com fontes é importante saber seu peso. O que significa se ela é mais fina ou mais grossa, se é mais escura ou mais clara, além do seu tamanho. Para isso utilizamos as tags font-family, font-weight, font-size e font-style </p>
+   <p>Todas estas propriedades podem ser sintetizadas na aplicação da tag font seguida dos valores relativos a cada uma delas na mesma ordem descrita acima. Com isso temos o seguinte:</p>
+   <img src="declar_fontes01.png" alt="estilos de fontes css.png"> 
+   <p>
+       <ul>
+           <li><strong>Atenção para esses detalhes</strong></li>
+           <li>font-family - Para escolher o tipo de letra;</li>
+           <li>font-weight - peso da fonte, se ela é mais escura, mais grossa ou mais clara;</li>
+           <li>font-size - tamanho da fonte. No exemplo usamos a medida em, mas pode ser em pixels também. Sendo essas duas unidades as mais adequadas para uma página web;</li>
+           <li>font-style - estilo da fonte, pode swer negrito, itálico ou sublinhada;</li>
+           <li>Tudo isso pode ser sintetizado ustilizando a tag font como na figura. Desde que seguindo a ordem acima descrita.</li>
+       </ul>
+   </p>
+   <div class="content" >
+    <table class="rTable" >
+        <thead >
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Thiago</td>
+                <td>Masculino</td>
+                <td>20</td>
+                <td>webdesignemfoco@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Thaís</td>
+                <td>Feminino</td>
+                <td>19</td>
+                <td>thais@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a trabalhar com cores</title>
+</head>
+<body>
+    <h1 style="background-color: blue; color: white;">Representação de cor por nomes</h1>
+    <p>O modo mais simples. é só clicar em color e escolher o nome da cor na lista que o vs code mostrar. Como no título deste parágrafo por exemplo.
+        <h3 style="background-color: rgba(255, 0, 0, 0.849);color: white;">Exemplo</h3>
+        <img src="cor pelo nome.png" alt="cor pelo nome">
+    </p>
+
+    <h2 style="background-color: #0000ff; color: #ffffff;">Cores em hexadecimal</h2>
+    <p>Como tudo em computação, as cores também podem ser representadas em código binário, onde temos:
+        <ul>
+            
+            <li>Cada cor é representada por um código</li>
+            <li>Sendo que em hexadecimal a base é 16 </li>
+            <li>Então a escala fica assim: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f</li>
+            <li>Cada cor então será representada por 6 dígitos referentes a este código</li>
+            <li>Toda cor em hexadecimal deve ser iniciada por # e seguida de seis dígitos. por exemplo: #ffffff representa o azul marinho. </li>
+        </ul>
+    </p>
+    <h2 style="background-color: rgb(0,0,255); color: rgb(255,255,255);">Representação em RGB</h2>
+    <p>
+        <ul>
+            <li>Cores representadas em hexadecimal</li>
+            <li>Cada cor é representada em uma escala que vai de 0 a 255</li>
+            <li>Sendo o 0 preto e o 255 branco</li>
+            <li>A tonalidade se dá através do acréscimo ou redução de valores nesta escala.</li>
+            <li>Para criar o padrão do título acima utlizamos o código  background-color: rgb(0,0,255); color: rgb(255,255,255)</li>
+        </ul>
+        <h3 style="background-color: rgba(255, 0, 0, 0.849);color: white;">Exemplo</h3>
+       <img src="cor_rgb.png" alt="cor em rgb">
+
+    </p>
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Cores em hsl</h2>
+    <p>
+        <ul>
+            <li>hsl significa hue, saturation, lightning. Traduzindo: Tonalidade, saturação e luminosidade.</li>
+            <li>Este padrão tem por referência a forma como o olho humano interpreta asa cores.</li>
+            <li>Para trabalhar com esse padrão utilizamos o código color: hsl(0,0,255) por exemplo. Que é o mesmo azul marinho do título</li>
+        </ul>
+        <h3 style="background-color: rgba(255, 0, 0, 0.849);color: white;">Exemplo</h3>
+        <img src="cor_hsl.png" alt="cor hsl">
+    </p>
+    <h2 style="background-color: rgba(0, 128, 0, 0.918); color: white;">Aplicando transparências</h2>
+    <p>No VS Code é muito fácil aplicar transparência. Sendo necessário apenas movimentar o seletor da escala que aparece a frente da escala de cores ao passar o mouse sobre a cor escolhida. </p>
+    <h2 style="background-color: rgb(63, 4, 63); color: white;">Elemento alpha</h2>
+    <p>Quando aplicamos transparência aparece uma quarta coluna com números junto a escala de cores. esta quarta coluna representa o valor alpha ou a transparência da cor. Como podemos ver na figura abaixo:
+        <h3 style="background-color: rgba(255, 0, 0, 0.849);color: white;">Exemplo</h3>
+        <img src="alpha.png" alt="transparencia de cor">
+    </p>
+    <h3 style="background-color: blueviolet; color: burlywood;">Aprendendo a criar uma paleta de cores</h3>
+    
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><strong>Utilizando o círculo cromático</strong> <br>
+            <img src="circulo_crom.jpg" alt="circulo cromatico.jpg">
+
+        </p>
+        <p>
+            Através da técnica do uso do círculo cromático é possível criar uma paleta de cores bem equilibrada.
+        </p>
+        <p>
+            <strong> Adobe Color:</strong> <br>
+            Outra maneira de escolher uma paleta de cores que fique perfeita para o seu trabalho é utilizando o site <a href="https://color.adobe.com/pt/create/color-wheel" target="blank">Adobe Color</a>
+
+        </p>
+        <h2 style="background-color: fuchsia;color: gold;">Harmonização de cores</h2>
+        <p>Quando montamos um site é necessário utilizar uma <strong>paleta de cores</strong> que será a identidade do site. </p>
+        <p>O ideal é essa paleta ter pelo menos quatro cores que se complementam criando uma harmonia simétrica entre os elementos da página.</p>
+        <p>No site da <a href="https://color.adobe.com/pt/create/color-wheel" target="blank">Adobe Color</a> por exemplo temos vários exemplos de paletas de cores utilizadas em diversos sites que geram um conjunto harmônico de cores. </p>
+
+
+</body>
+</html>

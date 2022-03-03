@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:18px;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+        div:hover{
+            color: red;
+        }
+        img{
+            box-shadow: 5px 5px 15px rgb(19, 1, 19);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>O que é hover?</h1>
+    <p>Hover é uma ação atribuída a um elemento da página. Esta ação pode ser mostrar um texto escondido, mudar a cor de um box ou texto e por aí vai.
+
+    </p>
+    <p>Para trabalhar com o hover que é uma pseudoclasse de comandos utilizamos o nome da div seguido de dois pontos(:)
+
+    </p>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:
+        <div>
+            Passe o mouse aqui
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+    </p>
+    <h1>Como conseguir esse efeito?</h1>
+    <p>Para conseguir este efeito utilize o código abaixo:</p>
+    <img src="trab com div01.png" alt="trabalhando com div.png">
+</body>
+</html>

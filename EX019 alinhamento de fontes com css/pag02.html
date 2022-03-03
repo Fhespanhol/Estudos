@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando fonte usando folha de estilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Usando fonte personalizada</h1>
+    <p>
+        <strong>Para usar fontes personalizadas é preciso seguir o passo a passo abaixo:</strong> <br>
+        <ol type="1">
+            <li>Baixe a fonte de um site especializado;</li>
+            <li>Na pasta do projeto crie um diretório chamado fonts;</li>
+            <li>Descompacte o arquivo de fontes para dentro deste diretório;</li>
+            <li>Insira a tag style logo abaixo da tag title e dentro da tag style insira o comando @font-face; </li>
+            <li>Em @font-face defina a família da fonte que deve estar entre aspas duplas "" e ser escrita exatamente com o mesmo nome da fonte salva na pasta fonts;</li>
+            <li>Dentro da tag src defina o caminho (url) do diretório onde se encontra a fonte. No VS Code basta apertar ctrl + space e marcar com o mouse o caminho e a url é definida automaticamente;</li>
+            <li>Após fazer isso é só especificar onde a fonte vai ser aplicada.</li>
+        </ol>
+
+    </p>
+    <p>
+        A codificação tem que ficar como esta:
+        <img src="fontepersonal01.png" alt="fonte personalizada em css.png">
+    </p>
+    <h2>O resultado final tem que ficar assim</h2>
+    <p>
+        Este é o resultado que o usuário vai ver quando abrir o site no navegador. 
+        <img src="resultadofinal01.png" alt="resultadofinal.png">
+    </p>
+    <h2>A codificação da folha de estilo css para deixar a página como esta fica assim</h2>
+    <p>
+        <strong>Código para folha de estilo com fonte personalizada e caixas de texto</strong>
+        <code><pre>@charset "UTF-8";
+
+            @font-face {
+                font-family: "The Giant and the Mouse";
+                        src: url(fonts/The\ Giant\ and\ the\ Mouse.ttf);
+                        font-size: 36px;
+                        min-height: 100%;
+            
+            }
+            body{
+                background-image: linear-gradient(to right,rgb(114, 67, 245), rgb(137, 247, 247) ) ;
+            }
+            p{
+                background-color: bisque;
+                border-radius: 10px ;
+                box-shadow:5px 5px 15px black;
+                width: 600px;
+                padding: auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                text-align: center;
+                
+            }
+            
+            h1{
+                font-family: "The Giant and the Mouse";
+                font-size: 48px;
+                color: yellow;
+                text-align: center;
+                text-shadow: 1px 1px 2px rgb(12, 10, 10);
+            }
+            h2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+                color: ivory;
+                text-shadow:1px 1px 2px rgb(12, 10, 10);
+            }
+            ol{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: black;
+                
+            }</pre></code>
+    </p>
+    <h2>Capturando fontes de sites</h2>
+    <p>Para capturar fontes de sites utlilize a extensão fonts-ninja no Google Chrome. Esta extensão não somente captura as fontes como também as cores delas.
+        Para usar a fonte que foi encontrada pelo fonts-ninja abra o site Google fonts e cole o nome da fonte e faça o download. Para aplicar ao site basta seguir o passo a passo explicado nesta página.
+    </p>
+   
+    
+</body>
+</html>
