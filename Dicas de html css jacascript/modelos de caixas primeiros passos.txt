@@ -1,0 +1,47 @@
+Modelos de caixas:
+
+HTML5 e CSS3:
+height=altura
+width=largura
+border=linha que circunda o conteúdo
+padding=preenchimento interno. Cria uma folga entre
+o conteúdo e a borda
+margin= preenchimento externo. Cria um distanciamento entre
+um box e outro
+outline=contorno ou traçado. Cria uma moldura em volta do box
+
+BOX-LEVEL:
+
+Quando as caixas são empilhadas uma abaixo da outra na tela. Formando uma
+estrutura descendente, como em um livro por exemplo.
+
+TIPOS DE CAIXAS:
+
+A mais famosa é <div> que pode ser usada com vários conteúdos. Além dela
+temos:
+<h1>-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+INLINE-LEVEL:
+
+Quando a caixa ocupa uma linha dentro de um texto por exemplo. O tipo mais
+comum é <span>. Outros tipos são:
+
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup>-<sub>
+<label>
+<button>
+<input>
+<select>
