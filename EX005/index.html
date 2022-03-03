@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formatação de textos</title>
+
+    <style> body {background-color: rgb(242, 168, 245);
+    }
+    </style>
+</head>
+<body>
+    <h1>Formatação de textos</h1>
+    <h2>Negrito / destaque</h2>
+    <p><code>Para colocar em negrito existem duas maneiras:
+        A primeira é usando a tag b , a segunda é usando a tag strong 
+        O resultado visual é o mesmo como visto abaixo: <br>
+        Usando a tag b <b>Exemplo de negrito</b> <br>
+        Usando a tag strong <strong>Exemplo de negrito</strong> <br>
+        Contudo no primeiro caso temos apenas a formatação visual e no segundo caso a formatação semântica do texto onde a tag strong informa ao navegador que <b>aquele texto destacado é importante.</b></code> 
+    </p>
+    <hr>
+    <h2>Texto em itálico / ênfase</h2>
+    <p>Assim como no negrito temos duas formas de colocar um texto em itálico: <br> 
+    A primeira é usando a tag I e a segunda usando a tag em. Visualmente o resultado é o mesmo como visto nos exemplos abaixo: <br>
+    Usando a tag I <i>Texto em itálico</i> <br>
+    Usando a tag em <em>Texto em itálico</em> <br>
+    Contudo no primeiro caso temos apenas a formatação visual e no segundo caso a formatação semântica do texto onde a tag em informa ao navegador que <b>aquele texto destacado é importante.</b> <br>
+    <hr>
+    <h2>Combinando efeitos</h2>
+    <p>Podemos combinar formatação. No caso de querer que um texto fique em negrito e itálico ao mesmo tempo. Como no exemplo abaixo: <br>
+    <b><i>Exemplo</i></b> <br>
+    Neste caso é só utilizar as tags em sequência. b e i ou strong e em 
+    </p> <hr>
+   <p>  
+       <h2>Formatação de textos monoespaçados</h2>
+       Um texto monoespaçado é aquele onde todas as letras ocupam o mesmo espaço. Neste texto por exemplo isto não acontece. Cada letra ocupa um espaço. O que acaba fazendo com as letras fiquem truncadas. <br>
+
+       Para criar um texto mais elegante visualmente utlizamos a tag code que faz com que o texto fique com todas as letras ocupando o mesmo espaço, ao invés de cada uma de um jeito. Veja o exemplo abaixo: <br>
+       texto normal <br>
+       <code>Usando a tag code</code> <br>
+       Como podemos ver o texto fica com um formato diferente e mais legível. <br>
+       <hr>
+
+       <h2>Código fonte </h2>
+       A tag <b>code</b> também serve para formatação de linhas de código de um programa. Por exemplo, você quer descrever uma instrução em Python pode usar a tag code para diferenciar a fonte do restante do texto, já que ela é perfeita para trabalhar com códigos. Veja no exemplo abaixo: <br>
+       <b>TRECHO DE CÓDIGO EM PYTHON</b> <br>
+       a=10 <br>
+       b=20 <br>
+       x=a*b <br>
+       print('x') <br>
+
+       Agora o mesmo trecho utilizando a tag <b>code</b> <br>
+       <code> a=10 <br>
+        b=20 <br>
+        x=a*b <br>
+        print('x')</code> <br>
+        <br>
+        <h2>pré formatação</h2>
+        Quando escrevemos textos em html a página gerada tem uma formatação padrão bem simples. Por exemplo, se simplesmente for escrevendo fica tudo na mesma linha. Para mudar de linha é preciso usar a tag br e para mudar de parágrafo a tag p , e não é possível mudar o espaçamento entre uma linha e outra. <br>
+        Por isso utlizamos a tag <b>pre</b> , a tag pre permite criar um texto respeitando a formatação com que ele foi digitado. Veja o exemplo: <br>
+        Um texto onde eu quero mudar de linha, porém com um espaço maior entre o título e o corpo do texto. Sem a tag não tem como. <br>
+        <pre> <b><i>Usando a tag pre</i></b>
+        
+Assim eu consigo formatar o texto do jeito que eu quero de maneira simples.
+
+Pular quantas linhas eu quiser inclusive.
+        
+            Para alinhar o texto do lado esquerdo da página é só selecionar o texto e segurar shift + tab até alinhar do lado esquerdo.
+        </pre>
+
+
+
+
+
+   </p>
+
+    
+</body>
+</html>

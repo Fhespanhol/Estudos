@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em html</title>
+</head>
+<body>
+    <h1>Criando listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol>
+    <li>Acordar</li>
+    <li>Levantar</li>
+    <li>Tomar café</li>
+    <li>Peidar</li>
+    </ol>
+    <p>Como pudemos ver listas ordenadas são as listas <strong>numeradas.</strong> <br>
+    Para criar uma lista numerada utilizamos a tag ol e /ol e dentro dela a tag li sempre antes de cada item da lista. Com isso criamos uma lista ordenada de maneira simples. <br>
+
+    Outra vantagem de criar uma lista ordenada é que na hora de incluir ou excluir um item a numeração é atualizada <strong>automaticamente.</strong>
+    </p>
+    <hr>
+    <h2>Listas ordenandas variadas</h2>
+    <p>Vocè não precisa ficar limitado somente a este tipo de lista, para mudar o modelo basta usar a tag type dentro da tag ol . Isto vai permitir que você trabalhe com outros modelos de listas. Vamos a elas: </p>
+    <h3>Outros modeelos de listas ordenadas</h3>
+    <h3>Números romanos</h3>
+    <ol type="I"> <li>Acordar</li>
+        <li>Levantar</li>
+        <li>Tomar café</li>
+        <li>Peidar</li>
+       
+        </ol>
+
+        <h3>Números romanos com letras minúsculas</h3>
+
+        <ol type="i"> <li>Acordar</li>
+            <li>Levantar</li>
+            <li>Tomar café</li>
+            <li>Peidar</li>
+           
+            </ol>
+
+            <h3>Ordem alfabética com letras maiúsculas</h3>
+
+            <ol type="A"> <li>Acordar</li>
+                <li>Levantar</li>
+                <li>Tomar café</li>
+                <li>Peidar</li>
+               
+                </ol>
+
+                <h3>Ordem alfabética com letras minúsculas</h3>
+
+                <ol type="a"> <li>Acordar</li>
+                    <li>Levantar</li>
+                    <li>Tomar café</li>
+                    <li>Peidar</li>
+                   
+                    </ol>
+
+            <hr>
+            <h2>Listas não ordenadas</h2>
+            <p>São as listas que não necessitam de uma ordem lógica. Basta inserir os elementos. Para inserir este tipo de lista utilizamos a tag ul . Por padrão a lista não ordenada é criada com o círculo preto no início. <br>
+            
+                Para mudar isto utlizamos a tag type. E os modelos que temos são: 
+                <ol>
+                    <li>Circle (Bola sem preenchimento);</li>
+                    <li>disc(Bola preenchida em preto);</li>
+                    <li>Square(Quadrado).</li>
+                
+                </ol>
+
+            </p>
+            <p>Vejamos os exemplos:</p>
+            <h3>Modelo disc</h3>
+            <ul> <li>Acordar</li>
+                <li>Levantar</li>
+                <li>Tomar café</li>
+                <li>Peidar</li>
+               
+                </ul>
+                <h3>Modelo circle</h3>
+
+                <ul type=circle>
+                    <li>Acordar</li>
+                    <li>Levantar</li>
+                    <li>Tomar café</li>
+                    <li>Peidar</li> 
+
+                </ul>
+                <h3>Modelo square</h3>
+                <ul type=square>
+                    <li>Acordar</li>
+                    <li>Levantar</li>
+                    <li>Tomar café</li>
+                    <li>Peidar</li> 
+
+                </ul>
+
+<hr>
+
+<h2>Misturando os modelos</h2>
+<p>É possível também criar listas mescladas, onde temos um modelo não ordenado dentro de um modelo ordenado. Como no exemplo abaixo:</p>
+<ol type="a">
+    <li><strong> Ir a faculdade</strong></li>
+    <ul>
+        <li>Fazer o trabalho</li>
+        <li>Entregar ao professor</li>
+        <li>Jogar papel no chão</li>
+        <li>Colar a porta</li>
+    </ul>
+    <li><strong>Voltar para casa</strong></li>
+    <ul>
+        <li>Abrir a porta</li>
+        <li>Fechar a porta</li>
+        <li>Acender a luz</li>
+        <li>Fazer carinho no gato</li>
+    </ul>
+
+</ol>
+<h3>Misturando listas ordenadas dentro de ordenadas</h3>
+
+<ol type="1">
+    <li><strong>Meus jogos favoritos</strong></li>
+    <ol type="a">
+        <li>xadrez;</li>
+        <li>Dama;</li>
+        <li>Enduro;</li>
+        <li>Xmen 2;</li>
+
+    </ol>
+    <li><strong>Minhas sobremesas favoritas</strong></li>
+    <ol type="a">
+        <li><strong>Bolo de chocolate</strong></li>
+        <li><strong>Sorvete</strong>
+            <ul type=square>
+                <li>Chocolate;</li>
+                <li>Mega
+                    <ul type=disc>
+                        <li><i>Amêndoas;</i></li>
+                        <li><i>Petit gateau;</i></li>
+                        <li><i>Clássico.</i></li>
+                    </ul>
+                </li>
+                <li>Tablito.</li>
+            </ul>
+        </li>
+        <li><strong>Pavê</strong>
+        <ul type=disc>
+            <li>Chocolate;</li>
+            <li>Morango;</li>
+            <li>Côco com chocolate.</li>
+
+        </ul>
+        </li>
+        <li><strong>Mousse</strong></li>
+        <li><strong>Torta</strong></li>
+
+    </ol>
+
+</ol>
+<hr>
+<h2>Listas de definição</h2>
+<p>São as listas onde temos um item seguido da descrição do mesmo. Exemplo: <br>
+Para inserir uma lista de definições utilizamos a tag dl seguida de dt e dd :
+</p>
+<dl>
+    <dt>Termo</dt>
+    <dd>Desccrição do termo</dd>
+</dl>
+<p>Exemplos:</p>
+<dt>HTML 5</dt>
+<dd>Linguagem de marcação de hipertexto</dd>
+<dt>CSS</dt>
+<dd>Linguagem de formatação de uma página web</dd>
+<dt>Javascript</dt>
+<dd>Linguagem de programação para gerar interatividade em uma página web</dd>
+<dt><em>Dica importante</em></dt>
+<dd>O Google procura sempre as listas de definição que são feitas utilizando as tags dt e dd </dd>
+
+
+    
+</body>
+</html>

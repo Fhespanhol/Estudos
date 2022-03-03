@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com links</title>
+</head>
+<body>
+    <h1>Inserindo links externos</h1>
+    <p>Um link externo é um atalho clicável para um outro local. <br>
+    Este local pode ser um site, um arquivo armazenado em um serviço de hospedagem como o github, pode ser um vídeo ou qualquer outra coisa. No exemplo abaixo temos um link externo para o repositório de aulas do professor Gustavo Guanabara que ministra o curso de webdesigner: <br>
+    <a href="https://github.com/gustavoguanabara/">Clicando neste texto em azul você é direcionado para o repositório de aulas automaticamente.</a> <br>
+    <strong>Para acessar esta aula no Youtube</strong> <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY">Basta clicar neste texto</a>
+    </p>
+    <h2> <strong>Abrir uma nova janela sem fechar a anterior</strong> </h2>
+    <p>O comportamento padrão de um navegador é que ao clicar em um hiperlink o site atual se feche e o novo se abra. </p>
+    <p>Só que isso nem sempre é o ideal, pois o visitante ao clicar no link para o novo site pode nunca mais voltar ao seu site.</p>
+    <p>Para evitar isso utilizamos uma tag chamada target, que faz com que uma nova janela seja aberta ao clicar no link, mas sem fechar a anterior.</p>
+    <p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target,
+        que suporta os seguintes valores: <br>
+        ‣<strong>_blank</strong> vai abrir o link em uma nova janela em branco <br>
+        ‣ <strong>_self</strong> vai abrir o link na janela ou frame atual (padrão) <br>
+        ‣ <strong>_top</strong> vai desfazer todos os frames e abrir o destino no navegador completo <br>
+        ‣<strong> _parent</strong> similar ao uso do _top em uma referência à janela mãe <br>
+        ‣ <strong>nome-do-frame</strong> caso esteja usando frames, indicar o nome da janela a abrir <br>
+    </p>
+    <hr>
+    <h1>Aprendendo a criar uma estrutura de navegação</h1>
+    <p>Para criar uma estrutura de navegação entre páginas é preciso usar internos. <br>
+        Os links internos permitem que você navegue entre as páginas do site. É o que chamamos de <strong>âncoras.</strong> 
+
+    </p>
+    <h2>Como inserir um link interno</h2>
+    <p>Para inserir um link interno é preciso usar a tag "a" e dentro dela segurar control + espaço para selecionar a página que será acessada. </p>
+    <br>
+    <p><strong>Exemplo:</strong></p>
+    Para ir para a segunda página <a href="pag02.html" target="_self rel=prev">clique aqui</a>
+    <h1>Abrindo uma página dentro de uma pasta</h1>
+    <p>Para abrir uma página dentro de outra pasta é preciso usar a tag "a" clicar em control + espaço e selecionar o arquivo dentro da pasta. <br>
+        <strong>Exemplo:</strong>
+        <br>
+        Para abrir a página notícias que está na pasta03 <a href="pasta03/noticias.html" target=_self rel=next> clique aqui</a>
+          </p>
+          <p>
+              <h2>Criando uma estrutura de menus</h2>
+              Quando criamos links para páginas externas ao site é importante que esta página abra em outra aba, mas quando trabalhamos com links internos o ideal é montar uma estrutura de menus, onde o usuário pode navegar dentro do site abrindo e fechando as páginasa, senão vai começar a abrir uma aba atrás da outra prejudicando e confundindo a navegação.
+          </p>
+
+</body>
+</html>
