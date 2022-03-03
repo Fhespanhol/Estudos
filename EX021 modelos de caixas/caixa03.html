@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+
+        }
+        header{
+            width: auto;
+            background-color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+       
+        footer{
+            background-color: black;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        nav{
+            background-color: rgb(53, 52, 52);
+            padding: 5px;
+            box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+        }
+        nav > a{
+            text-decoration: none;
+            color: linen;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            }
+            a:hover{
+                color: magenta;
+
+            }
+            a::after{
+                color: mediumblue;
+            }
+            p{
+               background-color: white;
+                box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+                border-radius: 0px 10px;
+                text-align: justify;
+                font-size: 16px;
+            }
+            #bola{
+                height: 100px;
+                width: 100px;
+                background-color: white;
+                margin: 10px;
+                border-radius: 50%;
+                text-align: center;
+            }
+            div{
+                margin: 4px;
+            }
+            div>img{
+                box-shadow:5px 5px 15px mediumpurple;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav><a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Exemplo de título</h2>
+                <h2>Exemplo de título 2</h2>
+                <p>A configuração ensinada neste exercício ensina a montar o esqueleto de um site.</p>
+                <p>
+                    <strong>Estrutura em caixas:</strong><br>
+                    A partir da HTML5 trabalhamos com uma estrutura em caixas, até a HTML4 usávamos a tag div para criar os boxes onde cada elemento ficaria. Porém na HTML5 temos uma nomenclatura para cada elemento da página. O que facilita na hora de criar a estrutura do site.
+                </p>
+                <p>
+                    Para entender como montar essa estrutura é só utlizar o código abaixo, onde é ensinado a criar as caixas com laterais arredondadas, sombras e o círculo que está abaixo do rodapé.
+                </p>
+                <div>
+                    <img src="cod01.png" alt="estruturadosite01.png">
+                    <img src="cod02.png" alt="estruturadosite02.png">
+                    <img src="cod03.png" alt="estruturadosite03.png">
+                        
+                
+                </div>
+                <aside>
+                    conteúdo periférico do artigo
+                </aside>
+               
+            </article>
+           
+        </section>
+        <aside>
+            Conteúdo periférico do site
+        </aside>
+       
+    </main>
+    <footer>
+        conteúdo do rodapé
+    </footer>
+    <div id="bola">
+        
+        
+    </div>
+    
+</body>
+</html>

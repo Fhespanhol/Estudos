@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1{
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('bordas.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        ul{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bolb;
+            color: blue;
+        }
+        h2{
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('bordasfolhas.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+        h3{
+            border: 20px solid black;
+            padding: 10px;
+            border-image-source: url('bordashearth.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+        }
+        div{
+            margin: 10px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando bordas</h1>
+    <p>Para trabalhar com bordas personalizadas precisamos criar uma imagem como esta:</p> <br>
+    <img src="bordas.png" alt="borda personalizada.png">
+    <p>Para criar uma imagem como essa eu utilizei o GIMP (programa de manipulação de imagens open source)</p>
+    <p>
+        <strong>Configurações da imagem:</strong>
+        <ul>
+            <li>No GIMP clique em arquivo > nova;</li>
+            <li>Em nova defina o tamanho da imagem para 80 x 80px;resolução em 70px; fundo transparente</li>
+            <li>Após criar a imagem salve como .png dentro da pasta onde está a página onde será aplicada a borda.</li>
+        </ul>
+    </p>
+    <p>Claro que essa imagem foi só um exemplo, pois podemos criar a imagem que quisermos, basta usar a criatividade. Como nos exemplos abaixo:</p>
+    <div>
+        <img src="bordasfolhas.png" alt="bordas de folhas.png">
+        <img src="bordashearth.png" alt="bordas de coracao.png">
+    </div>
+    <p>O resultado quando aplicado fica assim:</p>
+    <h2>Borda de folha</h2>
+    <h3>Borda de coração e smiley</h3>
+    <p>Para criar estas bordas basta utilizar o código abaixo, mudando apenas o nome da imagem:</p><br>
+    <img src="confbordaspers01.png" alt="bordas personalizadas.png">
+</body>
+</html>

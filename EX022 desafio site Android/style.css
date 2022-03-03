@@ -1,0 +1,184 @@
+@charset "UTF-08";
+
+@font-face {
+    font-family: "idroid";
+    src: url(fonts/idroid.otf);
+   
+}
+
+/* 
+    paleta de cores utilizada no projeto:color: 
+    #C5EBD6
+    #83E1AD
+    #3DDC84
+    #2FA866
+    #063D1E
+    */
+
+    :root{
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #063D1E;
+    }
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor1);
+
+        }
+        header{
+            background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+            min-height: 150px;
+            text-align:center;
+            margin: 1px;
+            padding: 2px;
+        }
+       h1{
+           font-family: Arial, Helvetica, sans-serif;
+           color: var(--cor0);
+           font-size: 36px;
+           font-weight: bolder;
+           text-shadow: 2px 2px 5px black;
+           text-align:center;
+       }
+       #texto{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--cor0);
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px black;
+        text-align:center;
+       }
+       h2{
+           font-family:'idroid' ;
+           color: var(--cor0);
+           background-color: #3ff13f;
+           box-shadow: 2px 2px 5px #011d01;
+           text-shadow: 2px 2px 5px black;
+       }
+       h3{
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: var(--cor4);
+           box-shadow: 2px 2px 5px black;
+           color: var(--cor0);
+           text-shadow: 2px 2px 5px black;
+       }
+
+       a.externo::after{
+           content: '\0020\1F517';
+       }
+       main{
+           min-width: 300px;
+           max-width: 1000px;
+           margin: auto;
+           margin-bottom: 30px;
+           padding: 20px;
+           background-color: white;
+           box-shadow: 0px 0px 10px grey;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+       }
+       main img{
+           width: 100%;
+       }
+       main img.pequena{
+           max-width: 350px;
+           display: block;
+           margin: auto;
+       }
+
+       main p{
+           margin: 15px 0px;
+           text-align: justify;
+           text-indent: 30px;
+           font-size: 1em;
+           line-height: 2em;
+       }
+
+       main strong{
+           color: var(--cor4);
+           font-weight: bold;
+       }
+
+       main a{
+           text-decoration: none;
+           font-weight: bold;
+           color: var(--cor4);
+           background-color: var(--cor1);
+           padding: 2px 6px;
+       }
+
+       main a:hover{
+           text-decoration: underline;
+           color: var(--cor4);
+       }
+
+       div.video{
+           background-color: var(--cor4);
+           margin: opx -20px 30px -20px;
+           padding: 20px;
+           padding-bottom: 59%;
+           position: relative;
+       }
+
+       div.video > iframe{
+           position: absolute;
+           top: 5%;
+           left: 5%;
+           width: 90%;
+           height: 90%;
+       }
+        footer{
+            background-color: black;
+            color: var(--cor0);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        ul{
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            list-style-position: inside;
+        }
+        article{
+            background-color: var(--cor1);
+            padding: 5px;
+        }
+        nav{
+            background-color: rgb(2, 41, 19);
+            padding: 5px;
+            box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+        }
+        nav > a{
+            text-decoration: none;
+            color: linen;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            }
+            nav > a:hover{
+                background-color: var(--cor1);
+                color: var(--cor4);
+
+            }
+            nav > a::after{
+                color: mediumblue;
+            }
+            p{
+               background-color: white;
+                box-shadow: 4px 5px 3px rgba(0, 0, 0, 0.377);
+                border-radius: 0px;
+                text-align: justify;
+                font-size: 16px;
+                line-height: 1.5em;
+            }
+            
+            }
+            div{
+                margin: 4px;
+            }
+            div>img{
+                box-shadow:5px 5px 15px mediumpurple;
+            }
