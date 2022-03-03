@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem ajustável</title>
+</head>
+<body>
+    <h1>Imagem que se ajusta ao tamanho da tela do dispositivo</h1>
+    <p>Utilizando a tag picture e source podemos fazer com que seu site se torne responsivo.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto_p.png">
+        <source media="(max-width:1050px)" srcset="imagens/foto_m.png">
+        <img src="imagens/foto_g.png" alt="Foto flexivel" style="width:auto;">
+      </picture>
+      <hr>
+    <h2>reproduzindo áudio</h2>
+    <audio src="audio/lights - patrick patrikios.mp3" controls autoplay>
+    </audio>
+    
+</body>
+</html>

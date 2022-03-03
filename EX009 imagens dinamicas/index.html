@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Crie uma imagem e tente abrir ela em vários dispositivos ou aumente e diminua o tamanho da tela do seu navegador no próprio computador.</p>
+    <p>Para criar uma imagem que se ajuste ao tamanho da tela do dispositivo utilizamos o seguinte código:</p>
+    <br>
+    <img src="imagens/tag picture.png" alt="tag picture.png">
+    <br>
+    <p>Como podemos ver no exemplo. A imagem com o código não é dinâmica e permanece sempre do mesmo tamanho, mas a imagem a seguir em que utilizamos tag picture seguida de source já temos uma imagem que se ajusta ao tamanho da tela. </p>
+    <p>Cuidado com a ordem das tags , tem sempre que ser como na imagem, outro cuidado é na hora de salvar as imagens. Evite salvar com letras amiúsculas, pois o navegador pode não encontrar as imagens. </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto_p.png">
+        <source media="(max-width:1050px)" srcset="imagens/foto_m.png">
+        <img src="imagens/foto_g.png" alt="Foto flexivel" style="width:auto;">
+      </picture>
+      <hr>
+      <h2>Detalhe importante na hora de criar suas imagens dinâmicas</h2>
+      <p>Procure salvar as imagens sempre com o nome <strong>foto_ ... .png</strong> , os três pontinhos referem-se a p, m e g que são os tamanhos das imagens. Em vários testes que fiz com várias imagens e também vários formatos e tamanhos de arquivos sempre que salvo as imagens dinâmicas com este nome nunca dá problema. </p>
+
+    <hr>
+    <h2>reproduzindo áudio</h2>
+    <audio src="audio/lights - patrick patrikios.mp3" controls autoplay>
+    </audio>
+<br>
+<h2>Onde encontrar músicas e efeitos sonoros para usar?</h2>
+<p>Obviamente que não podemos utilizar todo tipo de música e áudio em nossos sites. Eles pertencem a outras pessoas e são protegidos pela lei de direitos autorais. </p> 
+<p>Para evitar problemas com direitos autorias você pode baixar seus arquivos de áudio diretamente do Youtube. Para isso faça o seguinte:
+    <br>
+    <strong><em>Baixando áudio diretamente do Youtube:</em></strong>
+    <ol type="1"><li>Abra o seu canal;</li>
+        <li>Yoytube studio;</li>
+        <li>No menu a esquerda clique em "biblioteca de áudio;</li>
+        <li>Na biblioteca de áudio é possível baixar sons e músicas livres de direitos autorais para os seus projetos.</li>
+    </ol>
+</p>
+<p><h3>Sites onde podemos baixar mídias gratuitamente</h3>
+Um site que eu gosto muito é o <a href="https://pixabay.com/pt/">Pixabay</a> . Nele podemos baixar fotos e imagens de ótima qualidade, vídeos e áudio tudo livre e gratuito sem precisar pagar direitos autorais.
+<br>
+<strong>Pexels</strong>
+<br>
+Outro site muito bom para baixar mídias é o <a href="https://www.pexels.com/pt-br/" target="_blank" type="external">pexels</a> . Nele podemos baixar ótimas imagens e vídeos tudo gratuito e livre de direitos autorais.
+
+</p>
+
+    
+</body>
+</html>
