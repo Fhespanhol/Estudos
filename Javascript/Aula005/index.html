@@ -20,32 +20,32 @@
     </style>
 </head>
 <body>
-    <div id="area" >
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()" >
         Interaja!!!
     </div>
+
     <script>
-
          var a= window.document.getElementById('area')
-
-         a.addEventListener('click', clicar)
-         a.addEventListener('mouseenter', entrar)
-         a.addEventListener('mouseoute', sair)
-
         function clicar(){
-           
-            
-            a.innerText='Oi menino!!'
-            function entrar(){
-               
-                a.innerText ='Entrou!'
-            }
-            function sair(){
-                
-               a.innerText= 'Saiu!'
-            }
-
+       
+        a.innerText= 'Oi Menino!!!'
         }
+
+        function entrar(){
+           
+            a.innerText= 'Clique aqui!'
+            a.style.backgroundColor= 'green'
+        }
+
+        function sair(){
+            a.innerText= 'Até logo:)'
+            a.style.backgroundColor= 'red'
+        }
+       
+
     </script>
+    
+    
     
 </body>
 </html>
