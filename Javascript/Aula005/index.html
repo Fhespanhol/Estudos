@@ -17,9 +17,37 @@
             font-size: 20px;
             font-weight: bold;
         }
+        h1{
+            background-color: darkblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        div.ouvir{
+            background-color: rgb(19, 0, 128);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
+    
 </head>
 <body>
+
+    <h1>Criando interação com usuário através de Javascript</h1>
+    <p>Em Javascript existem vários tipos de interação. Esta é a mais básica. Utilizando o deslizar do mouse sobre um quadro.</p>
     <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()" >
         Interaja!!!
     </div>
@@ -41,11 +69,12 @@
             a.innerText= 'Até logo:)'
             a.style.backgroundColor= 'red'
         }
+
        
 
     </script>
     
-    
+   
     
 </body>
 </html>

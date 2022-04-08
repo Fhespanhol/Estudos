@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <section>
+        <div class="centro">
+            Primeiro valor:
+            <input class="num1" type="text"><br>
+            Segundo valor:
+            <input class="num2" type="number"><br>
+            <button onclick="clicar()">Resultado</button>
+            <p class="resultado"></p>
+        </div>
+       <script>
+            function clicar() {
+            var num1 = document.querySelector(".num1").value;
+            var num2 = document.querySelector(".num2").value;
+           
+            var resultado = parseInt(num1) + parseInt(num2);
+
+            document.querySelector(".resultado").innerHTML = resultado
+
+           
+            
+        }
+       </script>
+        
+    </section>
+    
+</body>
+</html>
