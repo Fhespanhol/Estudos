@@ -1,5 +1,5 @@
 
-var fruta= 4
+var fruta= 3
 
 switch(fruta){
     case 1:
