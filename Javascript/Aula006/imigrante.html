@@ -21,8 +21,12 @@
                 var res= document.querySelector("div#res")
                 var vel= String(txtv.value)
                 res.innerHTML= ('<p><strong>Você é </strong></p>'  +vel + ' <br> <p><strong> Seja bem vindo!</strong></p>')
-                if(vel!=brasileiro){
-               res.innerHTML+= ('<p> <strong>ESTRANGEIRO!</strong></p>')
+                if(vel=='Brasileiro'){
+               res.innerHTML+= ('<p> <strong>Você é brasileiro!</strong></p>')
+               
+           }
+           else{
+            res.innerHTML+= ('<p> <strong>Você é Estrangeiro!</strong></p>')
            }
           
             }
