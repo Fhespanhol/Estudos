@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrasenha</title>
+</head>
+<body>
+    <body>
+        <h1>Contrasenha</h1>
+        Digite o seu login: 
+        <input type="Text" name="usu" id="usu"> 
+        <input type="button" value="Verificar" onclick="calcular()" >
+        <div id="res">
+            Digite o seu nome de usuário:
+        </div>
+        <script>
+            function calcular(){
+                var txtv= document.querySelector("input#usu")
+                var res= document.querySelector("div#res")
+                var login= String(txtv.value)
+                res.innerHTML= ('<p><strong>Você é </strong></p>'  +login + '<br>')
+                if(login=='Flavio'){
+               res.innerHTML+= ('<p> <strong>Seja bem vindo!</strong></p>')
+               
+           }
+           else{
+            res.innerHTML+= ('<p> <strong>Você não é o Flavio. Acesso negado!</strong></p>')
+           }
+          
+            }
+   </script>
+
+
+    
+</body>
+</html>
